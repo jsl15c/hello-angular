@@ -1,0 +1,44 @@
+<section>
+  <h3>Inputs in Angular</h3>
+<label for="username-input"></label>
+<input id="username-input" placeholder="Dr. Seuess"
+      [(ngModel)]="userName"/>
+
+<br />
+<h3 *ngIf="userName">Hello, {{userName}}</h3>
+  <p>
+    {{message}}
+  </p>
+  <!-- store users selection in the mySelection variable -->
+  <!-- access value of input  -->
+          <!-- | -->
+  <select [(ngModel)]="mySelection"
+          (change)="reactToSelection()">
+<!-- ngModel wont work without importing FormModule -->
+    <option>Food Choices</option>
+    <option value="pasta">Chicken Pasta</option>
+    <option value="bell">Taco Bell</option>
+    <option value="sushi">Sushi</option>
+    <option value="las">Lasagna</option>
+    <option value="cev">Ceviche</option>
+    <option value="mojo">Mojo Pork</option>
+  </select>
+
+  <div>
+    <h3>What product do you need right now?</h3>
+    <label for="name-input"></label>
+    <input id="name-input" placeholder="Amazon Echo"
+        [(ngModel)]="product.title" />
+        <br />
+    <label for="price-input"></label>
+    <input type="number" id="price-input" placeholder="189.99"
+        [(ngModel)]="product.price" step="0.10"/>
+        <br />
+    <label for="desc-input"></label>
+    <textarea id="desc-input" placeholder=""
+        [(ngModel)]="product.description" >Description
+      </textarea>
+      <br />
+    <button (click)="createProduct()">show product</button>
+  </div>
+</section>

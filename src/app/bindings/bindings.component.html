@@ -1,0 +1,19 @@
+<section>
+  <div class="col-1-3">
+    <h3>{{feedbackMessage}}</h3>
+    <button style="height:50px;width:50px;"(click)="changeMessage()"></button>
+    <p *ngIf="clickCount === 1">
+      you have clicked {{clickCount}} time
+    </p>
+    <p *ngIf="clickCount === 0 || clickCount > 1">
+      you have clicked {{clickCount}} times
+    </p>
+  </div>
+  <div class="col-1-3">
+    <img [src] = "imageUrl" (click)="changeImage()" />
+  </div>
+  <div class="col-1-3">
+    <input type="text" [disabled]="isInputDisabled" />
+    <button (click)="toggleInput()">{{buttonText}}</button>
+  </div>
+</section>
