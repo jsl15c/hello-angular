@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { EmojifyPipe } from './pipes/emojify.pipe';
+import { DoSearchPipe } from './pipes/do-search.pipe';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EmojifyPipe } from './pipes/emojify.pipe';
     InputComponent,
     PipesComponent,
     CapitalizePipe,
-    EmojifyPipe
+    EmojifyPipe,
+    DoSearchPipe,
+    DirectiveExampleComponent
   ],
   imports: [
     BrowserModule,

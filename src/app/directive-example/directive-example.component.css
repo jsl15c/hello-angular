@@ -1,0 +1,20 @@
+section {
+   border:3px solid rebeccapurple;
+ }
+
+ div {border:3px solid royalblue}
+
+ .big {
+   font-size: 48px;
+   padding:10px;
+   border-width: 20px;
+ }
+
+ .colorful {
+   color:yellow;
+   background:darkgreen;
+ }
+
+ .comic {
+   font-family: 'Comic Sans';
+ }

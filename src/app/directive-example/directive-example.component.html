@@ -1,0 +1,32 @@
+<section>
+<h3 [ngStyle]="{color:headerColor}">directives examples</h3>
+  <select [(ngModel)]="dropdownSelection">
+    <option>Choose your pizza style</option>
+    <option value="nyc">New York</option>
+    <option value="deep">Deep Dish</option>
+    <option>Thin Crust</option>
+    <option>Wood Oven</option>
+  </select>
+
+  <div [ngSwitch]="dropdownSelection">
+    <div *ngSwitchCase="'nyc'">
+      <img src="https://media.giphy.com/media/3oFyD4xKncK6ptR7qg/giphy.gif" />
+    </div>
+    <div *ngSwitchCase="'deep'">
+      <img src="https://media.giphy.com/media/n0gFpvaXqUskU/giphy.gif" />
+    </div>
+    <div *ngSwitchDefault>
+      <h4>Cool, I guess.</h4>
+    </div>
+  </div>
+
+
+<div [ngClass]="{big: isBigSize, colorful: hasColor, comic: isComic }">
+  <p>
+    Lorem ipsum dolor sit amet
+  </p>
+</div>
+<button (click)="buttonA()">Toggle Size</button>
+<button (click)="buttonB()">Toggle Color</button>
+<button (click)="buttonC()">Toggle Font</button>
+</section>
