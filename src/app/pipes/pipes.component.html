@@ -4,7 +4,9 @@
   <input id="random-input" type="text" [(ngModel)]="randomText" placeholder="blah" />
   <p>
     {{ randomText | uppercase }}<br />
-    {{ randomText | lowercase }}
+    {{ randomText | lowercase }}<br />
+    {{ randomText | capitalize }}<br />
+    {{ randomText | emojify }}
   </p>
   <p>
     It is {{ rightNow | date:'h:mm a on EEEE MMMM yyyy' }}

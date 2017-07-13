@@ -5,7 +5,7 @@
       [(ngModel)]="userName"/>
 
 <br />
-<h3 *ngIf="userName">Hello, {{userName}}</h3>
+<h3 *ngIf="userName">Hello, {{userName | capitalize}}</h3>
   <p>
     {{message}}
   </p>

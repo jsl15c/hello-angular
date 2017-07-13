@@ -8,6 +8,8 @@ import { BindingsComponent } from './bindings/bindings.component';
 import { InputComponent } from './input/input.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { EmojifyPipe } from './pipes/emojify.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PipesComponent } from './pipes/pipes.component';
     FooterComponent,
     BindingsComponent,
     InputComponent,
-    PipesComponent
+    PipesComponent,
+    CapitalizePipe,
+    EmojifyPipe
   ],
   imports: [
     BrowserModule,
